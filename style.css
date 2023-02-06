@@ -79,6 +79,7 @@ body {
     font-size: 15px;
 
 }
+
 .card-grid {
     display: grid;
     grid-template-rows: 44rem 44rem 44rem;
@@ -88,6 +89,8 @@ body {
 
 .grid-row-1 {
     background: #E28625;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 
 }
 
@@ -97,6 +100,8 @@ body {
 
 .grid-row-3 {
     background: #004140;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 img,
@@ -113,7 +118,6 @@ img {
 p,
 button {
     margin-top: 2.5rem;
-    max-width: 32ch;
     font-family: 'Lexend Deca';
     font-style: normal;
     font-weight: 400;
@@ -129,9 +133,10 @@ button {
     outline: 2px solid white;
 }
 
-p{
+p {
     color: white;
     opacity: 0.75;
+    margin-right: 5rem;
 }
 
 button:hover {
@@ -180,7 +185,12 @@ h1 {
         grid-template-columns: 31rem 31rem 31rem;
         place-content: center;
     }
-    p{
-        max-width: 24ch;
+    .grid-row-1{
+        border-top-right-radius: 0rem;
+        border-bottom-left-radius: 1rem;
+    }
+    .grid-row-3{
+        border-bottom-left-radius: 0rem;
+        border-top-right-radius: 1rem;
     }
 }
